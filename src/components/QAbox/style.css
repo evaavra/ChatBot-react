@@ -1,0 +1,58 @@
+/* Chat containers */
+.container {
+  /* border: 2px solid #dedede; */
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.light {
+  background-color: #ddd;
+  text-align: left;
+  border-top-left-radius: 0px;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #cbb7b7;
+  text-align: left;
+  border-top-right-radius: 0px;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img.left {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+/* .container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+} */
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+  font-size: smaller;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+  font-size: smaller;
+}
